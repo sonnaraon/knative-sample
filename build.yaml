@@ -14,7 +14,7 @@
 apiVersion: build.knative.dev/v1alpha1
 kind: Build
 metadata:
-  name: docker-build
+  name: python-build
 spec:
   serviceAccountName: knative-build
   source:
