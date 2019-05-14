@@ -12,4 +12,4 @@ spec:
             image: ddiiwoong/hello-python:latest
             env:
             - name: TARGET
-              value: "Python Sample v1"
+              value: "Python Sample v1 with Knative on EKS"
