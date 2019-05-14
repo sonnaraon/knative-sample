@@ -8,8 +8,9 @@ spec:
     configuration:
       revisionTemplate:
         spec:
+          serviceAccountName: knative-serve
           container:
-            image: ddiiwoong/hello-python:latest
+            image: 208357897717.dkr.ecr.ap-northeast-2.amazonaws.com/hello-python
             env:
             - name: TARGET
               value: "Python Sample v1"
