@@ -1,0 +1,16 @@
+apiVersion: build.knative.dev/v1alpha1
+kind: Build
+metadata:
+  name: python-build
+spec:
+  serviceAccountName: builder
+  source:
+    git:
+      url: https://github.com/ddiiwoong/hello-python.git
+      revision: master
+  steps:
+  - name: build-and-push
+    image: gcr.io/kaniko-project/executor:v0.1.0
+    args:
+    - --dockerfile=/workspace/Dockerfile
+    - --destination=208357897717.dkr.ecr.ap-northeast-2.amazonaws.com/hello-python

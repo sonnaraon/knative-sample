@@ -1,2 +1,5 @@
 # hello-python
-Google Cloud Next '19 Extended Demo
+For Knative and Cloud Run
+
+Cloud Run on GKE, Knative on GKE : build.yaml
+Knative on EKS : build-ecr.yaml
