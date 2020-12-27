@@ -6,7 +6,7 @@ spec:
   serviceAccountName: builder
   source:
     git:
-      url: https://github.com/ddiiwoong/hello-python.git
+      url: https://github.com/nara0617/hello-python.git
       revision: master
   steps:
   - name: build-and-push

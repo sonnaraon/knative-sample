@@ -9,7 +9,7 @@ spec:
       revisionTemplate:
         spec:
           container:
-            image: ddiiwoong/hello-python:latest
+            image: nara0617/hello-python:latest
             env:
             - name: TARGET
               value: "Python Sample v1 with Knative on EKS"

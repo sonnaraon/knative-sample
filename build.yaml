@@ -19,11 +19,11 @@ spec:
   serviceAccountName: build-bot
   source:
     git:
-      url: https://github.com/ddiiwoong/hello-python.git
+      url: https://github.com/nara0617/hello-python.git
       revision: master
   steps:
   - name: build-and-push
     image: gcr.io/kaniko-project/executor:v0.1.0
     args:
     - --dockerfile=/workspace/Dockerfile
-    - --destination=docker.io/ddiiwoong/hello-python:latest
+    - --destination=docker.io/nara0617/hello-python:latest
